@@ -105,16 +105,12 @@
     &:first-child {
       padding-left: 16px;
     }
-
-    span {
-      display: inline-flex;
-      vertical-align: middle;
-    }
   }
 
   &__icon {
     width: 16px;
     height: 18px;
+    vertical-align: middle;
   }
 
   &__lbl {
