@@ -1,0 +1,8 @@
+main {
+  flex-grow: 1;
+  padding-top: 24px;
+
+  @media (min-width: 1110px) {
+    padding-top: 32px;
+  }
+}

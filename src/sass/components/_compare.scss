@@ -1,0 +1,173 @@
+.compare {
+  padding-top: 139px;
+  padding-bottom: 150px;
+  @media (min-width: 1110px) {
+    padding-top: 177px;
+  }
+
+  &__wrapper {
+    width: 290px;
+    @media (min-width: 1110px) {
+      width: 919px;
+    }
+  }
+
+  &__title {
+    @extend %no-margin;
+    font-size: 26px;
+    line-height: 35px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+
+    @media (min-width: 1110px) {
+      font-size: 38px;
+      line-height: 52px;
+    }
+  }
+
+  &__basic,
+  &__full {
+    position: relative;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+
+    &::before {
+      display: block;
+      width: 21px;
+      height: 21px;
+      margin: 0 auto;
+      content: '';
+      border: 2px solid $light-blue-color;
+      border-radius: 50%;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    td:not(:first-child) {
+      text-align: center;
+    }
+
+    th:first-child {
+      width: 40%;
+
+      @media (min-width: 1110px) {
+        width: 50%;
+      }
+    }
+  }
+
+  &__row {
+    height: 39px;
+    border: none;
+
+    @media (min-width: 1110px) {
+      height: 46px;
+    }
+  }
+
+  &__row--border {
+    @media (min-width: 1110px) {
+      border-bottom: 1px solid $light-grey-color;
+    }
+  }
+
+  &__category-row {
+    padding-left: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    color: $dark-blue-color;
+    background: $row-accent-color;
+
+    span {
+      display: block;
+      max-width: 136px;
+    }
+
+    @media (min-width: 1110px) {
+      height: 46px;
+
+      span {
+        max-width: 163px;
+      }
+    }
+  }
+
+  &__data-row {
+    vertical-align: middle;
+
+    &:first-child {
+      padding-left: 16px;
+    }
+
+    span {
+      display: inline-flex;
+      vertical-align: middle;
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 18px;
+  }
+
+  &__lbl {
+    margin: 0 auto;
+    font-size: 10px;
+    line-height: 16px;
+    color: $dark-grey-color;
+    border: 1.5px solid $dark-grey-color;
+    border-radius: 18px;
+
+    @media (min-width: 1110px) {
+      width: 96px;
+      font-size: 12px;
+    }
+  }
+
+  &__feature {
+    font-size: 14px;
+    line-height: 19px;
+    color: $accent-black-color;
+  }
+
+  &__value {
+    font-size: 14px;
+    line-height: 19px;
+    color: $middle-black-color;
+  }
+}
+
+.compare__full.selected:before {
+  background: $light-blue-color;
+}
+
+.label {
+  position: relative;
+
+  &::before {
+    @extend %mb-hidden;
+    position: absolute;
+    top: 8px;
+    left: 100px;
+    width: 28px;
+    height: 10px;
+    font-size: 9px;
+    line-height: 8px;
+    color: $dark-grey-color;
+    text-align: center;
+    content: 'root';
+    border: 1px solid $dark-grey-color;
+    border-radius: 12px;
+
+    @media (min-width: 1110px) {
+      display: block;
+    }
+  }
+}

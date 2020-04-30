@@ -1,0 +1,13 @@
+.footer {
+  flex-shrink: 0;
+  padding: 28px 0 148px;
+  background: $blue-accent-color;
+
+  &__description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+    color: $white-color;
+  }
+}

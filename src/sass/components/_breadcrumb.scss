@@ -1,0 +1,28 @@
+.breadcrumb {
+  @media (min-width: 1110px) {
+    display: block;
+  }
+
+  &__list {
+    @extend %list;
+    display: flex;
+  }
+
+  &__item {
+    font-size: 10px;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+
+      &::after {
+        color: $dark-grey-color;
+        content: '/';
+      }
+    }
+  }
+
+  &__link {
+    @extend %no-underline;
+    color: $dark-grey-color;
+  }
+}
